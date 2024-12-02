@@ -172,10 +172,10 @@ def Main():
 	if opt in ["B","2"]:
 		admin()
 	if opt in ["C","3"]:
-		os.system('xdg-open https://facebook.com/ruhul.xmin.bokxi);time.sleep(1)
+		os.system('xdg-open https://facebook.com/ruhul.xmin.bokxi');time.sleep(1)
 		fb()
 	if opt in ["D","4"]:
-		os.system('xdg-open https://facebook.com/ruhul.xmin);time.sleep(1)
+		os.system('xdg-open https://facebook.com/ruhul.xmin');time.sleep(1)
 		group()
 	if opt in ["0","0"]:
 		exit()
@@ -191,10 +191,10 @@ def admin():
 	print(' [0] Back to Main menu')
 	bal = input('Choose option >>> ')
 	if bal =='1':
-		os.system('xdg-open https://facebook.com/ruhul.xmin.bokxi);time.sleep(1)
+		os.system('xdg-open https://facebook.com/ruhul.xmin.bokxi');time.sleep(1)
 		admin()
 	if bal =='2':
-		os.system('xdg-open https://facebook.com/ruhul.xmin);time.sleep(1)
+		os.system('xdg-open https://facebook.com/ruhul.xmin');time.sleep(1)
 		admin()
 	if bal =='0':
 		Main()
